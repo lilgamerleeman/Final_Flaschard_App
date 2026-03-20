@@ -14,10 +14,10 @@
   /* dark vs light */
   /* use media prefer if it doesn't work */
   --background: light-dark(hsl(0,0%,95%),hsl(0,0%,7%));
-  --primary: light-dark(hsl(0,0%,93%),hsl(0,0%,9%));
-  --secondary: light-dark(hsl(0,0%,91%),hsl(0,0%,11%));
-  --third: light-dark(hsl(0,0%,89%),hsl(0,0%,13%));
-  --fourth: light-dark(hsl(0,0%,87%),hsl(0,0%,15%));
+  --primary: light-dark(hsl(0,0%,93%),hsl(0,0%,10%));
+  --secondary: light-dark(hsl(0,0%,91%),hsl(0,0%,13%));
+  --third: light-dark(hsl(0,0%,89%),hsl(0,0%,16%));
+  --fourth: light-dark(hsl(0,0%,87%),hsl(0,0%,19%));
 
   --accent: hsl(270, 50%, 50%);
 }

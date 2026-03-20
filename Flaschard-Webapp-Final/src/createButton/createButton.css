@@ -1,0 +1,91 @@
+:createButton{
+    --size: clamp(5%,50px,10%);
+}
+
+.Create-Button-Container{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1;
+}
+
+.Create-Button{
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    /* Scale the button size, not just the font */
+    height: clamp(40px, 10vw, 60px);
+    width: clamp(40px, 10vw, 60px);
+
+    /* Keep font size proportional but smaller */
+
+    /* font-size: clamp(20px,5vw, 30px); */
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: black;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.Create-Button-Sidebar {
+    
+}
+
+.Create-Button:hover{
+    transform: rotate(-90deg); /* tranlatey(-4px)*/
+}
+
+.Create-Button-Menu {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.Create-Button-Container:hover .Create-Button-Menu {
+    display: flex;
+}
+
+.Menu-Item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+    justify-content: flex-start;
+    white-space: nowrap;
+    display: flex;          /* ADD THIS */
+    gap: 8px;               /* ADD THIS */
+    align-items: center;    /* now actually works */
+}
+
+.Menu-Item:hover {
+    background-color: var(--third);
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    stroke: light-dark(black,white);
+    /* justify-content: left; */
+    /* justify-items: left; */
+    /* justify-self: left; */
+}
+
+.Menu-Item span {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
